@@ -1,0 +1,220 @@
+*{
+    /* font-family: 'Acme', sans-serif; */
+    padding: 0;
+    margin: 0;
+}
+
+/* NAV_BAR */
+#nav-bar{
+    display: flex;
+    background-color: rgb(15, 15, 15);
+    opacity: 0.8;
+    font-family: 'Play', sans-serif;
+}
+
+/* #navbar::before{
+    content: " ";
+    background-color: rgb(19, 18, 18);
+    position: absolute;
+    width: 100%;
+    height: 14%;
+    z-index: -1;
+    opacity: 0.8;
+} */
+
+#logo img{
+    border-radius: 45px;
+    height: 64px;
+    width: 62px;
+}
+
+nav ul{
+    display: flex;
+    
+}
+
+nav ul li{
+    list-style: none;
+    padding: 15px 22px;
+    font-size: 1.3rem;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 5px 2px;
+    padding: 2px;
+    background-color: rgb(15, 15, 15);
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+    opacity: 0.5;
+}
+
+/* SECTION */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 360px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    background: url('food-7.jpeg');
+    width: 100%;
+    height: 65%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    font-family: 'Acme', sans-serif;
+}
+/* SERVICES */
+#services{
+    display: flex;
+    margin: 5px;
+}
+
+#services .box{
+    border: 2px solid tomato;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: rgb(245, 240, 239);
+}
+
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 160px;
+    padding: 23px 4px;
+}
+
+#services .box p{
+    font-size: 0.9rem;
+}
+
+/* CLIENTS_SECTION */
+#client-section{
+    height: 260px;
+    position: relative;
+}
+
+#client-section::before{  
+    content: " ";
+    position: absolute;
+    top: 0;
+    background: url('food-7.jpeg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}  
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 95px;
+    padding: 10px 50px;
+}
+
+/* CONTACT SECTION */
+#contact{
+    position: relative;
+}
+
+#contact::before{  
+    content: " ";
+    position: absolute;
+    top: 0;
+    background: url('contact.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}  
+
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-family: 'Acme', sans-serif;
+} 
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+/* utility classes */
+.h-primary{
+    font-family: 'Acme', sans-serif;
+    font-size: 3rem;
+    /* margin: auto; */
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.h-secondary{
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5rem;
+}
+
+.btn{
+    border: 2px solid white;
+    background-color: tomato;
+    font-size: 1.8rem;
+    padding: 5px 20px;
+    margin: 20px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(219, 75, 50);
+}
+
+.center{
+    text-align: center;
+}
